@@ -2,16 +2,69 @@ html {
     font-size: 62.5%;
 }
 
-.header {
+body {
+    font-family: "Noto Serif JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.headerNav {
     height: 80px;
-    margin: 15px 25px;
+    margin: 0 33px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 
-    /* .logo {} */
-
-    .cartIcon {
+    .navCart {
         width: 26px;
         height: 26px;
+    }
+}
+
+.mvWrapper {
+    display: flex;
+    justify-content: flex-end;
+
+    .mvHeading {
+        position: absolute;
+        z-index: 10;
+        top: 210px;
+        /* left: 0; */
+        left: 700px;
+
+        .mvLead {
+            font-family: "Noto Serif JP", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 40px;
+            line-height: 230%;
+            letter-spacing: 1.3rem;
+            margin-bottom: 120px;
+        }
+
+        .mvView {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            letter-spacing: 50%;
+            text-decoration: none;
+            color: #fff;
+            background-color: #BAA8A2;
+            padding: 17px 140px;
+        }
+    }
+
+    .mainVisual {
+        position: relative;
+        z-index: 1;
+        width: 60%;
+        height: 690px;
+        background-image: url(../images/bg-top-kv.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 }
