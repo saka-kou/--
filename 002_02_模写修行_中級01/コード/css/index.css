@@ -5,7 +5,7 @@ html {
 body {
     font-family: "Noto Serif JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -64,6 +64,29 @@ body {
     }
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+
+    h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 1.3rem;
+        font-size: 3.2rem;
+        padding-left: 5.7px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        font-size: 1.6rem;
+        letter-spacing: 0.5rem;
+    }
+}
+
+
 .featureWrap {
     margin-top: 160px;
 
@@ -100,7 +123,7 @@ body {
     .featureContent {
         font-family: "Noto Serif JP", sans-serif;
         font-optical-sizing: auto;
-        font-weight: 100;
+        font-weight: 400;
         font-style: normal;
         font-size: 1.6rem;
         letter-spacing: 0.2rem;
@@ -110,7 +133,8 @@ body {
     .coconut {
         display: flex;
         justify-content: center;
-        gap: 80px;
+        gap: 63px;
+        margin-bottom: 80px;
 
         .coconutImg {
             width: 37%;
@@ -126,6 +150,63 @@ body {
                 font-size: 2.2rem;
                 font-weight: lighter;
             }
+
+            .featureText {
+                font-size: 1.5rem;
+                margin-right: 20px;
+                line-height: 3rem;
+                letter-spacing: 0.25rem;
+            }
+        }
+    }
+
+    .featureContents {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        margin-bottom: 155px;
+
+        img {
+            width: 320px;
+            height: 180px;
+            margin-bottom: 15px;
+        }
+
+        .englishTitle {
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5rem;
+            color: #BAA8A2;
+        }
+
+        h3 {
+            font-size: 2rem;
+            font-weight: lighter;
+            margin-bottom: 6px;
+        }
+
+        .featureText {
+            font-size: 1.5rem;
+            line-height: 3rem;
+            letter-spacing: 0.25rem;
+        }
+    }
+}
+
+.lineupImg {
+    background-image: url(../images/bg-lineup.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 640px;
+    margin-bottom: 155px;
+}
+
+.lineupWrap {
+    .title {
+        p {
+            font-size: 1.65rem;
+            letter-spacing: 0.25rem;
         }
     }
 }
