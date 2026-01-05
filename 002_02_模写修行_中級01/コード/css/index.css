@@ -30,8 +30,7 @@ body {
         position: absolute;
         z-index: 10;
         top: 210px;
-        /* left: 0; */
-        left: 700px;
+        left: 17%;
 
         .mvLead {
             font-size: 40px;
@@ -72,6 +71,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 80px;
 
         h2 {
             font-family: "Lato", sans-serif;
@@ -86,6 +86,46 @@ body {
         p {
             font-size: 1.6rem;
             letter-spacing: 0.5rem;
+        }
+    }
+
+    .englishTitle {
+        font-family: "Lato", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 2rem;
+        color: #BAA8A2;
+    }
+
+    .featureContent {
+        font-family: "Noto Serif JP", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+        line-height: 3rem;
+    }
+
+    .coconut {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+        .coconutImg {
+            width: 37%;
+        }
+
+        .coconutInfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 8px;
+
+            h3 {
+                font-size: 2.2rem;
+                font-weight: lighter;
+            }
         }
     }
 }
