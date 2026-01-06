@@ -5,7 +5,7 @@ html {
 body {
     font-family: "Noto Serif JP", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -30,7 +30,7 @@ body {
         position: absolute;
         z-index: 10;
         top: 210px;
-        left: 17%;
+        left: 22vh;
 
         .mvLead {
             font-size: 40px;
@@ -55,12 +55,11 @@ body {
     .mainVisual {
         position: relative;
         z-index: 1;
-        width: 60%;
+        width: 65%;
         height: 690px;
-        background-image: url(../images/bg-top-kv.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        object-fit: cover;
+        object-position: center center;
+        /* background-position: center center; */
     }
 }
 
@@ -137,7 +136,8 @@ body {
         margin-bottom: 80px;
 
         .coconutImg {
-            width: 37%;
+            width: 540px;
+            height: 400px;
         }
 
         .coconutInfo {
@@ -194,19 +194,91 @@ body {
     }
 }
 
-.lineupImg {
+.lineupMv {
     background-image: url(../images/bg-lineup.jpg);
     background-size: cover;
     background-position: center center;
     height: 640px;
-    margin-bottom: 155px;
+    margin-bottom: 160px;
 }
 
 .lineupWrap {
+    margin-bottom: 160px;
+
     .title {
         p {
             font-size: 1.65rem;
             letter-spacing: 0.25rem;
         }
     }
+
+    .lineupContents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+
+        .lineupContainer {
+            display: flex;
+            gap: 80px;
+            flex-direction: center;
+
+            .lineupContent {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .lineupImg {
+                width: 420px;
+                height: 480px;
+                margin-bottom: 18px;
+            }
+
+            h3 {
+                font-family: "Noto Serif JP", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2rem;
+                margin-bottom: 8px;
+                letter-spacing: 0.25rem;
+
+            }
+
+            p {
+                font-size: 1.6rem;
+                line-height: 3rem;
+                letter-spacing: 0.25rem;
+                margin-bottom: 18px;
+
+                &:last-child {
+                    margin-bottom: 3rem;
+                }
+            }
+
+            .lineupView {
+                font-family: "Lato", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 1.8rem;
+                letter-spacing: 0.25rem;
+                color: #fff;
+                background-color: #BAA8A2;
+                text-decoration: none;
+                padding: 18.5px 108px;
+                margin: 0 auto;
+                margin-top: auto;
+
+            }
+        }
+    }
+}
+
+.instaBg {
+    background-image: url(../images/bg-instagram.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 640px;
+    margin-bottom: 160px;
 }
