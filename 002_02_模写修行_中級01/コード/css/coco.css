@@ -3,11 +3,14 @@ html {
 }
 
 body {
+
     font-family: "Noto Serif JP", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
 }
+
+
 
 .headerNav {
     height: 80px;
@@ -311,6 +314,40 @@ body {
         text-decoration: none;
         padding: 18.5px 67px;
         margin: 0 auto;
+    }
+}
 
+.footer {
+    position: relative;
+    bottom: 0;
+    background-color: #baaba2;
+    padding: 56px 0 26px;
+
+    .footerInner {
+        padding: 0 425px;
+
+        .footerImg {
+            margin-bottom: 20px;
+        }
+
+        .footerli {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 24px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #fff;
+
+            li {
+                font-size: 1.4rem;
+                color: #fff;
+                list-style-type: none;
+            }
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #fff;
+        text-align: center;
     }
 }
