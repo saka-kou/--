@@ -282,3 +282,35 @@ body {
     height: 640px;
     margin-bottom: 160px;
 }
+
+.instaWrap {
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .instaImages {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 80px;
+
+        .instaImg {
+            width: 344px;
+        }
+    }
+
+    .instaView {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1.8rem;
+        letter-spacing: 0.25rem;
+        color: #fff;
+        background-color: #BAA8A2;
+        text-decoration: none;
+        padding: 18.5px 67px;
+        margin: 0 auto;
+
+    }
+}
