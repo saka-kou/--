@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgba(105, 158, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+header {
+    margin-bottom: 40px;
+
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+main {
+    .todo-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+
+        #todo-text {
+            width: 500px;
+            border: #d9d9d9 solid 1px;
+            border-radius: 10px;
+            padding: 15px 15px;
+        }
+
+        #add-btn {
+            padding: 15px 20px;
+            background-color: rgb(67, 67, 255);
+            color: #fff;
+            border-radius: 10px;
+        }
+    }
+
+    #todo-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        li {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            border-radius: 10px;
+            font-size: 2.4rem;
+            list-style: none;
+            border: #d9d9d9 solid 1px;
+            padding: 7px 20px 7px 40px;
+            transition: 0.2s;
+
+            &::before {
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "";
+                display: block;
+                width: 24px;
+                height: 24px;
+                background-image: url(../images/checkBtn.png);
+            }
+
+            &::after {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                content: "";
+                width: 24px;
+                height: 24px;
+                display: block;
+                background-image: url(../images/Trash.png);
+                opacity: 1;
+            }
+
+            &:hover {
+                box-shadow: 2px 1px 2px rgba(128, 128, 128, 0.5);
+            }
+        }
+    }
+}
