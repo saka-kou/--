@@ -1,0 +1,94 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    z-index: 1;
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    color: #fefefe;
+}
+
+.main {
+    background-image:
+        linear-gradient(rgba(39, 37, 37, 1)75%,
+            rgba(49, 68, 84, 1),
+            rgba(56, 92, 119, 1));
+    background-size: cover;
+
+    .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 240px;
+
+        a {
+            color: #fefefe;
+            text-decoration: none;
+        }
+
+        .topContent {
+            #freeBtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 327px;
+                height: 86px;
+                font-size: 2.4rem;
+                background-color: #4E5A73;
+                border-radius: 13px;
+                margin-bottom: 25px;
+
+                &::after {
+                    margin-top: 5px;
+                    margin-left: 25px;
+                    content: url(../images/mike.png);
+                }
+            }
+        }
+
+        .bottomContent {
+            display: flex;
+            gap: 17px;
+
+            .bottomBtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 13px;
+                width: 155px;
+                height: 79px;
+                background-color: #707276;
+
+            }
+
+            a {
+                font-size: 1.6rem;
+            }
+
+            #randomBtn {
+                display: flex;
+                align-items: center;
+
+                &::after {
+                    margin-top: 3px;
+                    margin-left: 6px;
+                    content: url(../images/smallmike.png);
+                }
+            }
+
+            #themeBtn {
+                &::after {
+                    margin-top: 3px;
+                    margin-left: 12px;
+                    content: url(../images/smallmike.png);
+                }
+            }
+        }
+    }
+}

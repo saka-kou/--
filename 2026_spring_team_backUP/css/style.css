@@ -1,0 +1,88 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "fot-tsukuardgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(../images/bg.png);
+    background-size: cover;
+    color: #fefefe;
+}
+
+.main {
+    margin-top: 170px;
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        font-weight: 300;
+        margin-bottom: 8px;
+    }
+
+    #login {
+        font-size: 1.6rem;
+        margin-bottom: 60px;
+    }
+
+    #address {
+        display: flex;
+        align-items: center;
+        width: 280px;
+        height: 54px;
+        padding: 17px 15px;
+        background-color: #707276;
+        border-radius: 40px;
+        margin-bottom: 27px;
+
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 1.4rem;
+            color: #fefefe;
+            text-decoration: none;
+
+            &::before {
+                height: 24px;
+                margin-top: 5px;
+                margin-right: 8px;
+                content: url(../images/phone.png);
+            }
+        }
+    }
+
+    #icons {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+
+        .circleIcon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            background-color: #ddd;
+
+            .icon {
+                position: absolute;
+                inset: 1;
+            }
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    bottom: 40px;
+}
