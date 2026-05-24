@@ -1,0 +1,42 @@
+body {
+    font-size: 62.5%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    margin: 0;
+
+    .logo {
+        margin-left: 25px;
+    }
+
+    .navli {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        list-style-type: none;
+        gap: 38px;
+
+        .ONLINE {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+            font-weight: lighter;
+            height: 40px;
+            background-color: #524433;
+            color: #fff;
+            padding: 22px 30px;
+        }
+    }
+}
+
+.mainVs {
+    height: 685px;
+    background-image: url(../images/bg-top-kv.jpg);
+    background-size: cover;
+    background-position: center;
+}
